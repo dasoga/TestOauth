@@ -12,9 +12,11 @@
 		2C4DB9221EB2751D0022C733 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DB9201EB2751D0022C733 /* Main.storyboard */; };
 		2C4DB9241EB2751D0022C733 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DB9231EB2751D0022C733 /* Assets.xcassets */; };
 		2C4DB9271EB2751D0022C733 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C4DB9251EB2751D0022C733 /* LaunchScreen.storyboard */; };
+		3ABBC3C40FEBAB3D839A8739 /* Pods_TestOauth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55924507D0D008328F77ADCD /* Pods_TestOauth.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18C78F70B0D0840EFC5B5C63 /* Pods-TestOauth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOauth.release.xcconfig"; path = "Pods/Target Support Files/Pods-TestOauth/Pods-TestOauth.release.xcconfig"; sourceTree = "<group>"; };
 		2C4DB9191EB2751D0022C733 /* TestOauth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestOauth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4DB91C1EB2751D0022C733 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C4DB91E1EB2751D0022C733 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		2C4DB9231EB2751D0022C733 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C4DB9261EB2751D0022C733 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C4DB9281EB2751D0022C733 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55924507D0D008328F77ADCD /* Pods_TestOauth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TestOauth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD63066486E2CE07D8F02A7D /* Pods-TestOauth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TestOauth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TestOauth/Pods-TestOauth.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABBC3C40FEBAB3D839A8739 /* Pods_TestOauth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2C4DB91B1EB2751D0022C733 /* TestOauth */,
 				2C4DB91A1EB2751D0022C733 /* Products */,
+				D91FAAC5BB5EDB3E06A9095F /* Pods */,
+				5C6B9BDCB653D2CE15B39FD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = TestOauth;
 			sourceTree = "<group>";
 		};
+		5C6B9BDCB653D2CE15B39FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55924507D0D008328F77ADCD /* Pods_TestOauth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91FAAC5BB5EDB3E06A9095F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD63066486E2CE07D8F02A7D /* Pods-TestOauth.debug.xcconfig */,
+				18C78F70B0D0840EFC5B5C63 /* Pods-TestOauth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C4DB92B1EB2751D0022C733 /* Build configuration list for PBXNativeTarget "TestOauth" */;
 			buildPhases = (
+				D850097530DACED2F3C39E7A /* [CP] Check Pods Manifest.lock */,
 				2C4DB9151EB2751D0022C733 /* Sources */,
 				2C4DB9161EB2751D0022C733 /* Frameworks */,
 				2C4DB9171EB2751D0022C733 /* Resources */,
+				C28E295F9F95319EE8D5F0CC /* [CP] Embed Pods Frameworks */,
+				9640D0E5EFC009B66EE807B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9640D0E5EFC009B66EE807B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOauth/Pods-TestOauth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C28E295F9F95319EE8D5F0CC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TestOauth/Pods-TestOauth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D850097530DACED2F3C39E7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C4DB9151EB2751D0022C733 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		2C4DB92C1EB2751D0022C733 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD63066486E2CE07D8F02A7D /* Pods-TestOauth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestOauth/Info.plist;
@@ -269,6 +345,7 @@
 		};
 		2C4DB92D1EB2751D0022C733 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18C78F70B0D0840EFC5B5C63 /* Pods-TestOauth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestOauth/Info.plist;
@@ -298,6 +375,7 @@
 				2C4DB92D1EB2751D0022C733 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
